@@ -1,0 +1,7 @@
+streamlit      
+tensorflow        
+transformers        
+numpy
+streamlit_lottie
+pandas
+scikit-learn
