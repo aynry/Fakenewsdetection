@@ -1,27 +1,12 @@
 import streamlit as st
 import tensorflow as tf
-import pickle
-import re
-import nltk
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-import pandas as pd
-import keras
-from keras_preprocessing.sequence import pad_sequences
+from transformers import DistilBertTokenizer, TFDistilBertForSequenceClassification
+import numpy as np
 from streamlit_lottie import st_lottie
 
-
-
-# Initialize stopwords and lemmatizer
-stop_words = set(stopwords.words('english'))
-lemmatizer = WordNetLemmatizer()
-
-# Load model and tokenizer
-model = tf.keras.models.load_model('lstm_model.h5')
-with open('tokenizer.pkl', 'rb') as handle:
-    tokenizer = pickle.load(handle)
-
-
+# Load the saved DistilBERT model and tokenizer
+model = TFDistilBertForSequenceClassification.from_pretrained("bert_model")
+tokenizer = DistilBertTokenizer.from_pretrained("bert_tokenizer")
 
 # Define text preprocessing function
 def preprocess_text(text, tokenizer, max_length=128):
