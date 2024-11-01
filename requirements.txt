@@ -1,6 +1,6 @@
 streamlit==1.39.0      
-tensorflow==2.18.0      
-transformers==4.46.1         
-numpy==1.26.0
-streamlit_lottie
-pandas
+tensorflow==2.12.0             # Compatible TensorFlow version
+keras==2.12.0                  # Compatible Keras version
+transformers==4.35.0           # Hugging Face Transformers library
+numpy==1.26.0                  # NumPy for numerical operations
+streamlit-lottie
