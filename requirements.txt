@@ -5,4 +5,4 @@ nltk
 keras
 pandas
 streamlit-lottie
-pickle
+keras_preprocessing
