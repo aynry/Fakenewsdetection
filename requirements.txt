@@ -1,7 +1,0 @@
-streamlit     
-tensorflow        
-keras                
-transformers           
-numpy              
-streamlit-lottie
-tf-keras
