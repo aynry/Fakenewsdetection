@@ -1,4 +1,4 @@
-streamlit==1.39.0      
+streamlit     
 tensorflow==2.12.0             # Compatible TensorFlow version
 keras==2.12.0                  # Compatible Keras version
 transformers==4.35.0           # Hugging Face Transformers library
