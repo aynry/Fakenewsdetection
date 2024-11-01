@@ -1,7 +1,7 @@
 streamlit     
 tensorflow        
-keras==3.6.0                
+keras                
 transformers           
-numpy==1.26.0               
+numpy              
 streamlit-lottie
 tf-keras
