@@ -11,8 +11,7 @@ import pandas as pd
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from streamlit_lottie import st_lottie
 
-
-
+nltk.download('stopwords')
 
 
 # Initialize stopwords and lemmatizer
